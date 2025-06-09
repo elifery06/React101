@@ -18,6 +18,7 @@ function App() {
       <Product productName={productName} price={15000} /> */}
       <Container>
         <Product productName="Telefon" price={38000} />
+        <Product productName="Bilgisayar" price={95000} />
       </Container>
     </div>
   )
