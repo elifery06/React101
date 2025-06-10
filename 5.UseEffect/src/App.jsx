@@ -20,7 +20,7 @@ function App() {
     console.log("ilk render edildiğinde FİRSTNAME ve LASTNAME state  değerleri değiştiğinde çalışır")
   }, [firstName, lastName])
   // useEffect(() => {
-  //   console.log("ilk render edildiğinde ve LASTNAME state değeri değiştiğinde çalışır")
+  //   console.log("ilk render edildiğinde vee LASTNAME state değeri değiştiğinde çalışır")
   // }, [lastName])
   return (
     <div>
