@@ -11,12 +11,25 @@ function App() {
     console.log(response.data)
   }
 
-  const getUserById = async () => {
-    const response = await axios.get(BASE_URL + "/users/" + userId)
+  const getUserById = async (userId) => {
+    const response = await axios.get(`${BASE_URL}/users/${userId}`)
+    console.log(response.data)
   }
 
+  const createUser = async (newUser) => {
+    const response = await axios.post(`${BASE_URL}/users`, newUser)
+    console.log(response.data)
+  }
+
+
   useEffect(() => {
-    getAllUsers()
+    // getAllUsers()
+    // getUserById(1)
+    const newUser = {
+      "username": "elif",
+      "password": "763"
+    }
+    createUser(newUser)
   }, [])
   return (
     <div>
