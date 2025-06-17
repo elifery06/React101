@@ -24,6 +24,10 @@ function App() {
     await axios.put(`${BASE_URL}/users/${userId}`, updatedUser);
   }
 
+  const deleteUserById = async (userId) => {
+    const deletedResponse = await axios.delete(`${BASE_URL}/users/${userId}`)
+    console.log(deletedResponse)
+  }
   useEffect(() => {
     // getAllUsers()
     // getUserById(1)
@@ -37,6 +41,7 @@ function App() {
     //   "username": "yoti",
     //   "password": "5656"
     // })
+    deleteUserById("688d")
   }, [])
   return (
     <div>
